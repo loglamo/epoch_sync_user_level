@@ -1,0 +1,36 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	//
+BUFLEN	trans-sync-v2.c	/^#define BUFLEN /;"	d	file:
+Circular Buffer with:	README.md	/^## Circular Buffer with: ##$/;"	s
+How to use	README.md	/^## How to use$/;"	s
+ITEMSIZE	trans-sync-v2.c	/^#define ITEMSIZE /;"	d	file:
+README	README.md	/^# README #$/;"	c
+THREAD_NUM	trans-sync-v2.c	/^#define THREAD_NUM /;"	d	file:
+buf_data_item	trans-sync-v2.c	/^typedef struct buf_data_item {$/;"	s	file:
+buffer	trans-sync-v2.c	/^	void *buffer;        \/\/data buffer$/;"	m	struct:ring_buffer	typeref:typename:void *	file:
+buffer_end	trans-sync-v2.c	/^	void *buffer_end;    \/\/end of data buffer$/;"	m	struct:ring_buffer	typeref:typename:void *	file:
+buffer_mutex	trans-sync-v2.c	/^	pthread_mutex_t buffer_mutex;    \/\/a mutex for the buffer$/;"	m	struct:ring_buffer	typeref:typename:pthread_mutex_t	file:
+capacity	trans-sync-v2.c	/^	uint64_t capacity;   \/\/maximum number of items in buffer$/;"	m	struct:ring_buffer	typeref:typename:uint64_t	file:
+consumer	trans-sync-v2.c	/^void *consumer(ring_buffer rb) {$/;"	f	typeref:typename:void *
+count	trans-sync-v2.c	/^	uint64_t count;      \/\/current number of items$/;"	m	struct:ring_buffer	typeref:typename:uint64_t	file:
+data_head	trans-sync-v2.c	/^	void *data_head;    \/\/pointer to head$/;"	m	struct:ring_buffer	typeref:typename:void *	file:
+data_item	trans-sync-v2.c	/^	int data_item;$/;"	m	struct:buf_data_item	typeref:typename:int	file:
+data_item	trans-sync-v2.c	/^} data_item;$/;"	t	typeref:struct:buf_data_item	file:
+data_tail	trans-sync-v2.c	/^	void *data_tail;      \/\/pointer to tail$/;"	m	struct:ring_buffer	typeref:typename:void *	file:
+empty	trans-sync-v2.c	/^	sem_t empty;          \/\/semaphore for empty status$/;"	m	struct:ring_buffer	typeref:typename:sem_t	file:
+full	trans-sync-v2.c	/^	sem_t full;          \/\/semaphore for full status$/;"	m	struct:ring_buffer	typeref:typename:sem_t	file:
+main	trans-sync-v2.c	/^int main() {$/;"	f	typeref:typename:int
+producer	trans-sync-v2.c	/^void *producer(ring_buffer rb) {$/;"	f	typeref:typename:void *
+rb_free	trans-sync-v2.c	/^void rb_free(ring_buffer *rb) {$/;"	f	typeref:typename:void
+rb_init	trans-sync-v2.c	/^void rb_init(ring_buffer *rb, uint64_t size, uint64_t capacity) {$/;"	f	typeref:typename:void
+rb_pop_item	trans-sync-v2.c	/^void rb_pop_item(ring_buffer *rb, void *item) {$/;"	f	typeref:typename:void
+rb_push_item	trans-sync-v2.c	/^void rb_push_item(ring_buffer *rb, const void *item) {$/;"	f	typeref:typename:void
+ring_buffer	trans-sync-v2.c	/^typedef struct ring_buffer {$/;"	s	file:
+ring_buffer	trans-sync-v2.c	/^} ring_buffer;$/;"	t	typeref:struct:ring_buffer	file:
+size	trans-sync-v2.c	/^	uint64_t size;       \/\/size of each item$/;"	m	struct:ring_buffer	typeref:typename:uint64_t	file:
+timestamp	trans-sync-v2.c	/^	time_t timestamp;$/;"	m	struct:buf_data_item	typeref:typename:time_t	file:
